@@ -491,10 +491,10 @@ ul {
     border: 1px #DDDDDD solid; }
 
 .table-striped > tbody > tr:nth-child(2n+1) {
-  background-color: #F8F8F8; }
+  background-color: #EEEEEE; }
 
 .table-hover > tbody > tr:hover {
-  background-color: #F8F8F8; }
+  background-color: #EEEEEE; }
 
 .pagination {
   list-style: none; }
