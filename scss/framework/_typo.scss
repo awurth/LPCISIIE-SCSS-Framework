@@ -1,8 +1,9 @@
 
-$basecolor: #2C3E50 !default;
 $link: #3498DB !default;
 $linkhover: #167ABD !default;
 $darkgrey: #333333 !default;
+//$basecolor: #2C3E50 !default;
+$basecolor: $darkgrey !default;
 $codefont: 'Source Code Pro', monospace, sans-serif !default;
 
 @import "heading";
