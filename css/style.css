@@ -152,12 +152,13 @@ nav {
   nav > h2 {
     padding: 10px 0;
     text-align: center;
-    font-weight: bold;
-    color: #DD5A6F; }
-  nav a {
+    font-weight: bold; }
+    nav > h2 > a, nav > h2 > a:hover {
+      color: #DD5A6F; }
+  nav a:not(.main-link) {
     display: block;
     color: #333333; }
-    nav a:hover {
+    nav a:not(.main-link):hover {
       background-color: #E9E7EA;
       color: #333333; }
   nav ul {
@@ -206,8 +207,7 @@ section.main {
 .card {
   margin: 2em 0;
   padding: 25px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
 
 hr {
   border-top: 1px #EEEEEE solid;

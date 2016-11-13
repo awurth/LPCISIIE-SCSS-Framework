@@ -196,7 +196,7 @@ h6 {
 
 html {
   font-family: 'Open Sans', Roboto, Arial, sans-serif;
-  color: #2C3E50; }
+  color: #333333; }
 
 a {
   text-decoration: none;
@@ -249,7 +249,7 @@ pre {
   overflow: auto; }
 
 code, pre {
-  background-color: #F8F8F8;
+  background-color: #F4F4F4;
   border-radius: 3px;
   font-family: "Source Code Pro", monospace, sans-serif; }
 
