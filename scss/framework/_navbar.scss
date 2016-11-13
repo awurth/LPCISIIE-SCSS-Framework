@@ -1,0 +1,8 @@
+
+$navbarBgColor: #EEEEEE !default;
+$navbarLinkColor: #2C3E50 !default;
+$navbarDisabledColor: #AAAAAA !default;
+
+.navbar {
+    @include navbar($navbarBgColor, $navbarLinkColor, $navbarDisabledColor)
+}

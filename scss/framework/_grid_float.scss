@@ -1,0 +1,10 @@
+
+$columns: 8 !default;
+$gutter: 1% !default;
+
+.row {
+    @include row();
+}
+
+@include float-columns($columns, $gutter);
+@include offsets($columns, $gutter)

@@ -1,0 +1,10 @@
+
+$gutter: 1% !default;
+
+.flex-row {
+    @include flex-row();
+}
+
+.span {
+    @include flex-grid($gutter);
+}

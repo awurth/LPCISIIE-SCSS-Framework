@@ -1,0 +1,6 @@
+
+$lightgrey: #EEEEEE !default;
+
+.page-header {
+    @include page-header($lightgrey);
+}

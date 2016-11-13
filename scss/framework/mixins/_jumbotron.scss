@@ -1,0 +1,14 @@
+
+@mixin jumbotron($background: #EEEEEE, $padding: 50px) {
+  padding: $padding;
+  background-color: $background;
+  border-radius: 5px;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}

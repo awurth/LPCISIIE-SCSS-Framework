@@ -1,0 +1,61 @@
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.7em 0;
+}
+
+h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
+    font-size: 0.7em;
+    color: #777777;
+}
+
+.sub {
+    color: #909090;
+}
+
+h1.sub {
+    font-size: 1.4em;
+}
+
+h2.sub {
+    font-size: 1.1em;
+}
+
+h3.sub {
+    font-size: 0.8em;
+}
+
+h4.sub {
+    font-size: 0.7em;
+}
+
+h5.sub {
+    font-size: 0.55em;
+}
+
+h6.sub {
+    font-size: 0.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+h6 {
+    font-size: 0.67em;
+}

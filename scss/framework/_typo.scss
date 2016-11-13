@@ -1,0 +1,127 @@
+
+$basecolor: #2C3E50 !default;
+$link: #3498DB !default;
+$linkhover: #167ABD !default;
+$darkgrey: #333333 !default;
+$codefont: 'Source Code Pro', monospace, sans-serif !default;
+
+@import "heading";
+
+html {
+    font-family: 'Open Sans', Roboto, Arial, sans-serif;
+    color: $basecolor;
+}
+
+a {
+    text-decoration: none;
+    color: $link;
+}
+
+a:hover {
+    color: $linkhover;
+}
+
+p, blockquote {
+    margin-bottom: 10px;
+}
+
+mark {
+    background-color: #5CC0FF;
+}
+
+em {
+    font-style: italic;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ins, u {
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: bold;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+q:before, q:after {
+    content: "\"";
+}
+
+blockquote {
+    padding: 8px 30px;
+    border-left: 8px #F2F2F2 solid;
+    line-height: 2em;
+    color: $darkgrey;
+}
+
+code {
+    display: inline-block;
+    padding: 5px 8px;
+    color: #EE6E73;
+}
+
+pre {
+    display: block;
+    padding: 8px 15px;
+    border-left: 8px #EAEAEA solid;
+    color: $darkgrey;
+    line-height: 2em;
+    overflow: auto;
+}
+
+code, pre {
+    background-color: #F8F8F8;
+    border-radius: 3px;
+    font-family: $codefont;
+}
+
+kbd {
+    padding: 1px 5px;
+    background-color: $darkgrey;
+    border-radius: 3px;
+    font-family: $codefont;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+.list-square {
+    list-style-type: square;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justified {
+    text-align: justify;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}

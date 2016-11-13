@@ -1,0 +1,21 @@
+
+$info: #3498DB !default;
+$success: #18BC9C !default;
+$warning: #F39C12 !default;
+$danger: #E74C3C !default;
+
+.alert-success {
+    @include alert($success);
+}
+
+.alert-info {
+    @include alert($info);
+}
+
+.alert-warning {
+    @include alert($warning);
+}
+
+.alert-danger {
+    @include alert($danger);
+}

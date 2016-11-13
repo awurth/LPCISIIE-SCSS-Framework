@@ -1,0 +1,23 @@
+
+$tableBorderColor: #DDDDDD !default;
+$tableStripedBgColor: #F8F8F8 !default;
+$tableHoverBgColor: #F8F8F8 !default;
+
+$tableVerticalPadding: 15px !default;
+$tableHorizontalPadding: 10px !default;
+
+.table {
+    @include table($tableBorderColor, $tableVerticalPadding, $tableHorizontalPadding);
+}
+
+.table-bordered {
+    @include table-bordered($tableBorderColor);
+}
+
+.table-striped {
+    @include table-striped($tableStripedBgColor);
+}
+
+.table-hover {
+    @include table-hover($tableHoverBgColor);
+}

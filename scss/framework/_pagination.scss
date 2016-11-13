@@ -1,0 +1,6 @@
+
+$default: #95A5A6 !default;
+
+.pagination {
+  @include pagination($default);
+}

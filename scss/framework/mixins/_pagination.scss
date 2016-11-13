@@ -1,0 +1,26 @@
+
+@mixin pagination($buttonBgColor, $buttonTextColor: #FFFFFF, $verticalPadding: 8px, $horizontalPadding: 12px, $activeClass: 'active', $disabledClass: 'disabled') {
+    list-style: none;
+    & > li {
+        display: inline-block;
+        & > a {
+            display: block;
+            padding: $verticalPadding $horizontalPadding;
+            background-color: $buttonBgColor;
+            border-radius: 5px;
+            color: $buttonTextColor;
+            &:hover {
+                background-color: darken($buttonBgColor, 10);
+            }
+        }
+
+        &.#{$activeClass} > a {
+            background-color: darken($buttonBgColor, 15);
+        }
+  
+        &.#{$disabledClass} > a {
+            background-color: lighten($buttonBgColor, 15);
+            cursor: not-allowed;
+        }
+    }
+}

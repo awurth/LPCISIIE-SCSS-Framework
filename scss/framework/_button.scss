@@ -1,0 +1,43 @@
+
+$default: #95A5A6 !default;
+$primary: #2C3E50 !default;
+$warning: #F39C12 !default;
+$danger: #E74C3C !default;
+
+.btn {
+    @include btn($default);
+}
+
+.btn-primary {
+    @include btn($primary);
+}
+
+.btn-warning {
+    @include btn($warning);
+}
+
+.btn-danger {
+    @include btn($danger);
+}
+
+.btn-sm {
+    padding: 5px 10px;
+}
+
+.btn-lg {
+    padding: 20px 25px;
+}
+
+.btn-flat {
+    border: none;
+    border-radius: 0;
+}
+
+.btn-xl {
+    padding: 20px;
+    width: 100%;
+}
+
+.btn-fancy {
+
+}

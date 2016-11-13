@@ -1,0 +1,24 @@
+
+@mixin btn($color, $verticalPadding: 10px, $horizontalPadding: 15px, $fontColor: #FFFFFF) {
+  display: inline-block;
+  text-align: center;
+  padding: $verticalPadding $horizontalPadding;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: $color;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: normal;
+  box-sizing: border-box;
+  color: $fontColor;
+  line-height: normal;
+  &:hover {
+    background-color: darken($color, 10);
+    color: $fontColor;
+  }
+}

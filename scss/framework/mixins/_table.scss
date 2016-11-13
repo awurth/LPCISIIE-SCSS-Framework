@@ -1,0 +1,52 @@
+
+@mixin table($borderColor, $verticalPadding, $horizontalPadding) {
+    width: 100%;
+    border-collapse: collapse;
+    th {
+        padding: $verticalPadding $horizontalPadding;
+        border-bottom: 2px $borderColor solid;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    td {
+        padding: $verticalPadding $horizontalPadding;
+    }
+
+    & > tbody {
+        & > tr {
+            border-bottom: 1px $borderColor solid;
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}
+
+@mixin table-bordered($borderColor) {
+    border: 1px $borderColor solid;
+    th {
+        border: 1px $borderColor solid;
+        border-bottom-width: 2px;
+    }
+
+    td {
+        border: 1px $borderColor solid;
+    }
+}
+
+@mixin table-striped($backgroundColor) {
+    & > tbody {
+        & > tr:nth-child(2n+1) {
+            background-color: $backgroundColor;
+        }
+    }
+}
+
+@mixin table-hover($backgroundColor) {
+    & > tbody {
+        & > tr:hover {
+            background-color: $backgroundColor;
+        }
+    }
+}

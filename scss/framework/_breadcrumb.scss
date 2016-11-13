@@ -1,0 +1,8 @@
+
+$breadcrumbBgColor: #EEEEEE !default;
+$breadcrumbSeparatorColor: #AAAAAA !default;
+$breadcrumbPadding: 15px !default;
+
+.breadcrumb {
+  @include breadcrumb($breadcrumbBgColor, $breadcrumbSeparatorColor, $breadcrumbPadding);
+}

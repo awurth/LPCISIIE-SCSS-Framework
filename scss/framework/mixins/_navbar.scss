@@ -1,0 +1,29 @@
+
+@mixin navbar($bgColor, $linkColor, $disabledColor, $verticalPadding: 20px, $horizontalPadding: 20px, $activeClass: 'active', $disabledClass: 'disabled') {
+  list-style: none;
+  font-size: 0;
+  background-color: $bgColor;
+  & > li {
+    display: inline-block;
+    font-size: 1rem;
+    & > a {
+      display: block;
+      padding: $verticalPadding $horizontalPadding;
+      color: $linkColor;
+      &:hover {
+        background-color: darken($bgColor, 5);
+        color: lighten($linkColor, 20);
+      }
+    }
+
+    &.#{$activeClass} > a {
+      font-weight: bold;
+      background-color: darken($bgColor, 5);
+    }
+
+    &.#{$disabledClass} > a {
+      color: $disabledColor;
+      cursor: not-allowed;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+
+@mixin breadcrumb($background, $color, $padding) {
+  list-style: none;
+  background-color: $background;
+  padding: $padding;
+  & > li {
+    display: inline-block;
+    & + li:before {
+      padding: 0 5px;
+      color: $color;
+      content: ">\00a0";
+    }
+  }
+}
